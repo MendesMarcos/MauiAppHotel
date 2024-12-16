@@ -6,15 +6,15 @@
       {
          InitializeComponent();
 
-         //MainPage = new AppShell();
+         MainPage = new NavigationPage(new Views.ContratacaoHospedagem());
       }
 
       protected override Window CreateWindow(IActivationState? activationState)
       {
          try
          {
-            var window = new Window(new AppShell());
-            //var window = base.CreateWindow(activationState);
+            //var window = new Window(new AppShell());
+            var window = base.CreateWindow(activationState);
 
             window.Width = 400;
             window.Height = 600;
